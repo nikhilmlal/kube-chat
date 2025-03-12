@@ -1,0 +1,10 @@
+# Files/folders to be ignored when running a build.
+
+# Ignore local `node_modules`.
+node_modules
+
+# Ignore git files.
+.gitignore
+
+# Ignore md files.
+*.md
