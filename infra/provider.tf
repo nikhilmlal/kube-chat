@@ -1,12 +1,17 @@
 terraform {
   required_providers {
     aws = {
-      source = "hashicorp/aws"
+      source  = "hashicorp/aws"
       version = "5.95.0"
     }
   }
 }
 
 provider "aws" {
-  # Configuration options
+  region = "ap-south-1"
+  default_tags {
+    tags = {
+      CreationMode = "terraform"
+    }
+  }
 }
